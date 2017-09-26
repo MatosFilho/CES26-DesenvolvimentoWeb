@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Surpresa!</title>
+		<!-- Ajuste de tela -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap via CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- JavaScript via CDN -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+			
+			function surpresa (id){
+				document.getElementById(id).style.display = 'block';
+			}
+
+			function tira_surpresa (id){
+				document.getElementById(id).style.display = 'none';
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1 style="text-align: center">Você quer uma surpresa?</h1>
+			</div>
+
+			<hr />
+
+			<div class="row" align="center">
+				<img src="imagens/surpresa2.jpg" align="middle" id="imagem" style="display:none" />
+			</div>
+			
+			<hr />
+
+			<div class="row" align="center">
+				<button type="button" class="btn btn-success" onclick="surpresa('imagem')">Surpresaaa!</button>
+				<button type="button" class="btn btn-danger" onclick="tira_surpresa('imagem')">Ops! Mais uma vez.</button>
+			</div>
+					
+		</div>
+
+	</body>
+
+</html>

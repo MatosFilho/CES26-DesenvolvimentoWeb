@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Adiciona/remove</title>
+
+		<!-- Ajuste de tela -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap via CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- JavaScript via CDN -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+		
+	</head>
+
+	<body>
+		
+	<div id="div1">
+		<h3>Adicionando e removendo elementos DOM</h3>
+		<button type="button" class="btn btn-success" onclick="adiciona()">adiciona</button>
+		<button type="button" class="btn btn-danger" onclick="remove()">remove</button>
+		<hr />
+	</div>
+
+	<script>
+		function adiciona(){
+			var lista = document.getElementsByTagName("p");
+			var num = lista.length;
+			var paragrafo = document.createElement("p");
+			paragrafo.id = num+1;
+			var node = document.createTextNode("Elemento: "+(num+1));
+			paragrafo.appendChild(node);
+			var element = document.getElementById("div1");
+			element.appendChild(paragrafo);
+		}
+
+		function remove(){
+			var lista = document.getElementsByTagName("p");
+			var num = lista.length;
+			var filho = document.getElementById(num);
+			var element = document.getElementById("div1");
+			element.removeChild(filho);
+		}
+
+	</script>
+
+	</body>
+
+</html>

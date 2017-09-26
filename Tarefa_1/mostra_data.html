@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>mostra_data</title>
+
+		<!-- Ajuste de tela -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap via CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- JavaScript via CDN -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+			 function imprime_data() {
+			 	document.getElementById("data").innerHTML = Date();
+			 }
+		</script>
+	</head>
+
+	<body>
+		
+	<div class="container">
+		<div class="row">
+			<h4>Clique no botão para saber hora/data</h4>		
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">
+					<button type="button" class="btn btn-info" onclick="imprime_data();">Data atual</button>
+			</div>
+			<div class="col-md-5">
+				<p id="data"></p>		
+			</div>
+		</div>
+	</div>
+
+	</body>
+
+</html>
