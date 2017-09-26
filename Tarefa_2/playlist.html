@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Playlist</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			#video{
+				background: #FFFFFF;
+				width: 346px;
+				padding: 5px;
+				float: left;
+				margin: 10px;
+			}
+
+			.clear{
+				clear: both;
+			}
+		</style>
+	</head>
+
+	<body>
+	
+		<div class="container" style="background: #CCC">
+
+			<!-- header da página -->
+			<div class="page-header">
+				<h1>PlayList do Sucesso</h1>
+				<p class="lead">A playlist do sucesso especialmente para você!</p>
+			</div> <!-- fim: header da página -->
+			
+
+			<!-- abas -->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#tab_info" role="tab" data-toggle="tab">Info</a></li>
+				<li><a href="#tab_forro" data-toggle="tab">Forró</a></li>
+				<li><a href="#tab_reggaeton" data-toggle="tab">Reggaeton</a></li>
+				<li><a href="#tab_sertanejo" data-toggle="tab">Sertanejo</a></li>
+				<li><a href="#tab_clips" data-toggle="tab">Clips</a></li>
+			</ul> <!-- fim: abas -->
+
+
+			<!-- conteúdo das abas -->
+			<div class="tab-content">
+
+				<!-- aba info-->
+				<div class="tab-pane fade in active" id="tab_info">
+					<h3>Sobre a playlist</h3>
+					<p>Playlist com as melhores músicas.</p>
+				</div> <!-- fim: aba info-->
+
+				<!-- aba forró-->
+				<div class="tab-pane fade" id="tab_forro">
+					<h3>Forró</h3>
+
+					<div class="row">
+						<div class="col-md-6">
+							<h5>Wesley Safadão - Ar Condicionado no 15 (Esquenta WS In Miami Beach) :</h5>
+						</div>
+						<div class="col-md-4">
+							<audio controls>
+  							<source src="musicas/arcondicionado.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<h5>Wesley Safadão - Coração Machucado [DVD Ao vivo em Brasília] :</h5>
+						</div>
+						<div class="col-md-4">
+							<audio controls>
+  							<source src="musicas/coracaomachucado.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+						</div>
+					</div>
+
+				</div> <!-- fim: aba forró-->
+
+				<!-- aba sertanejo-->
+				<div class="tab-pane fade" id="tab_sertanejo">
+					<h3>Sertanejo</h3>
+				</div> <!-- fim: aba sertanejo-->
+
+				<!-- aba reggaeton-->
+				<div class="tab-pane fade" id="tab_reggaeton">
+					<h3>Reggaeton</h3>
+
+					<div class="row">
+						<div class="col-md-6">
+							<h5>Mi gente - J. Balvin, Willy William :</h5>
+						</div>
+						<div class="col-md-4">
+							<audio controls>
+  							<source src="musicas/migente.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+						</div>
+					</div>
+
+				</div> <!-- fim: aba reggaeton-->
+
+				<!-- aba clips-->
+				<div class="tab-pane fade" id="tab_clips">
+					<h3>Clips</h3>
+					
+					<!-- clipes raggaeton -->		
+					<div class="clear">
+						<hr /> 
+						<h4>Forró</h4>	
+					</div>
+
+					<div id="video">
+						<iframe width="336" height="276" src="https://www.youtube.com/embed/fK27wdZA6og">
+						</iframe>
+						<p>Wesley Safadão - Ar Condicionado no 15</p>
+					</div>					
+
+					<div id="video">
+						<iframe width="336" height="276" src="https://www.youtube.com/embed/59J9Eqslfbg">
+						</iframe>
+						<p>Wesley Safadão - Coração Machucado</p>
+					</div>
+
+					<div id="video">
+						<iframe width="336" height="276" src="https://www.youtube.com/embed/EsWe3GeHb8Y">
+						</iframe>
+						<p>Wesley Safadão - Coração Machucado</p>
+					</div>
+
+					 <!-- clipes raggaeton -->
+					<div class="clear">
+						<hr />
+						<h4>Reggaeton</h4>	
+					</div>
+
+					<div id="video">
+						<iframe width="336" height="276" src="https://www.youtube.com/embed/q4OPF9XrUWo">
+						</iframe>
+						<p>Mi gente - J. Balvin, Willy William</p>
+					</div>
+
+				</div> <!-- fim: aba clips-->
+
+			</div>
+			<!-- fim: conteúdo das abas-->
+
+		</div> <!-- fim: container -->
+
+	</body>
+
+</html>

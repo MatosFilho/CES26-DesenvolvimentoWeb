@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Capitais</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container" style="background: #CCC">
+		
+			<div class="page-header">
+				<h3>Maiores capitais do brasil (população)</h3>
+			</div>
+
+			<div class="btn-group btn-group-justified">
+			    <a href="#" class="btn btn-primary" onclick="myMap(-23.533773, -46.625290)">1.São Paulo</a>
+			    <a href="#" class="btn btn-primary" onclick="myMap(-22.902782, -43.207542)">2.Rio de janeiro</a>
+			    <a href="#" class="btn btn-primary" onclick="myMap(-15.780101, -47.929203)">3.Brasília</a>
+			    <a href="#" class="btn btn-primary" onclick="myMap(-12.970413, -38.512417)">4.Salvador</a>
+			    <a href="#" class="btn btn-primary" onclick="myMap(-3.781057, -38.533224)">5.Fortaleza</a>
+			    <a href="#" class="btn btn-primary" onclick="myMap(-19.907810, -43.956204)">6.Belo Horizonte</a>
+			</div>
+			
+			<hr/>
+
+			<div class="row" align="center">
+				<div id="map" style="width:800px;height:400px;"></div>
+			</div>
+
+			<hr/>
+
+			<script>
+				function myMap(latitude, longitude) {
+					var myCenter = new google.maps.LatLng(latitude,longitude);
+					var mapCanvas = document.getElementById("map");
+					var mapOptions = {center: myCenter, zoom: 11};
+					var map = new google.maps.Map(mapCanvas, mapOptions);
+					var marker = new google.maps.Marker({position:myCenter});
+					marker.setMap(map);				}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ8B1zsaXFOjvJ52bB1n8r6PLkDJgHRrA&callback=myMap"></script>	
+		</div> <!-- fim: container-->		
+
+	</body>
+
+</html>
