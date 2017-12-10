@@ -1,0 +1,28 @@
+<h3>*ngIf</h3>
+
+<div *ngIf="nomes.length > 0">
+	Lista não vazia.
+</div>
+
+<div *ngIf="nomes.length==0">
+	Lista vazia.
+</div>
+
+<br>
+<div *ngIf="mostrarNomes" >
+  Lista de nomes aqui.
+
+  <ul>
+  <li *ngFor="let nome of nomes, let i = index ">
+    {{ i + 1 }} - {{ nome }}
+  </li>
+</ul>
+
+</div>
+
+<div *ngIf="!mostrarNomes" >
+  Não existem nomes para serem listados.
+</div>
+
+<br>
+<button (click)="onMostrarNomes()">Mostrar ou esconder nomes</button>
